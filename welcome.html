@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>welcome</title>
+</head>
+<style>
+    h1{
+        text-align: center;
+        color:blue;
+        font-size: 40px;
+    }
+    p{
+        color:red;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        font-size: 20px;
+        text-align:left;
+        border: 2px solid black;
+        width:40%;
+        margin:auto;
+        padding: 20px ;
+
+    }
+    a{
+        text-decoration: none;
+        margin-left: 200px;
+        margin-top:30px;
+    }
+</style>
+<body>
+    <h1>Successfully Submitted!!</h1>
+    <p id="para"></p>
+    <a href="index.html">Go to Home</a>
+    
+
+    <script>
+        const para=document.getElementById("para")
+        const param=new URLSearchParams(window.location.search)
+
+
+        param.forEach((value, key)=>{
+
+            para.append(`${key}=${value}`);
+            para.append(document.createElement('br'))
+        })
+
+        
+    </script>
+
+</body>
+</html>

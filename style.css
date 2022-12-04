@@ -1,0 +1,56 @@
+body{
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: black;
+    font-family: sans-serif;
+
+}
+.container{
+    width:80%
+    height:500px;
+    margin:auto;
+}
+form{
+    background-color: rgb(123, 228, 158);
+    padding: 20px 40px;
+    border-radius: 8px;
+
+}
+form h2{
+    color:blue;
+}
+form input,textarea{
+    width:100%;
+    margin: 10px 0;
+
+}
+form input{
+    height: 30px;
+}
+.group label{
+    text-transform: capitalize;
+    color:blue;
+    font-family: sans-serif, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight: bold;
+}
+.group span{
+    color:red;
+    /* visibility: hidden; */
+}
+span{
+    color: red  ;
+    /* visibility: hidden; */
+}
+
+button{
+    font-size: 20px;
+    margin-left: 100px;
+    margin-top: 10px;
+    border-radius: 5px;
+}
+button:hover{
+    background: orange;
+}
